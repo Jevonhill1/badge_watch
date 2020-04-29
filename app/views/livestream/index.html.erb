@@ -1,0 +1,15 @@
+<h1>Live Stream</h1>
+
+<%= react_component 'Streaming' %>
+<p><button id="btnStart">Are you ready to Live Stream?</button></br>
+<button id="btnStop">Stop Recording</button></p>
+<video controls width="100%"" height="auto"></video>
+</br>
+<p><button id="btn btn-success"><%= link_to "Home", home_index_path %></button>
+<button><%= link_to "New Video", livestream_new_path %></button></p>
+
+<form>
+  <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+  <input type="submit">
+</form>

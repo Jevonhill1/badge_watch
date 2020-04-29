@@ -1,0 +1,9 @@
+<%= simple_form_for @application_controller, url:(livestream_new_path) do |f| %>
+    <%= f.error_notification %>
+  
+    <%= f.input :name %>
+  
+  
+    <%= f.button :submit, class: "btn-primary" %>
+    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+  <% end %>

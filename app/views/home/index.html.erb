@@ -1,0 +1,20 @@
+<h1>BadgeWatch</h1>
+<%= image_tag ("badge_watch.png") %>
+<h3>Get Started</h3>
+<p><small>Sign up for a new account, enter your email & get started.</small></p>
+<ul>
+  <li>
+    <% if current_user %>
+    <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+    <% else %>
+    <%= link_to 'Sign up', new_user_registration_path %>
+  </li>
+  <li>
+    <%= link_to 'Sign in', new_user_session_path %>
+  </li>
+  <li>
+    <%= link_to 'LiveStream', livestream_index_path %>
+  </li>
+</ul>
+<% end %>
+
