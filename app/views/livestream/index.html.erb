@@ -13,3 +13,14 @@
   <input type="file" id="img" name="img" accept="image/*">
   <input type="submit">
 </form>
+<div>
+    <video id="vid" autoplay></video>
+        <script>
+        navigator.mediaDevices.getUserMedia({
+            video: true
+        })
+        .then(stream => {
+            document.getElementById("vid").srcObject = stream;
+        })
+        </script>
+</div>
