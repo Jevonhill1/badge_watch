@@ -15,4 +15,5 @@ Rails.application.routes.draw do
   get 'dashboard/index'
 
   resources :livestream, only: [:index, :show, :new, :update, :create, :destroy]
+  resources :police, only: [:index, :show, :new, :update, :create, :destroy]
 end

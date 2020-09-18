@@ -1,0 +1,29 @@
+<h1>Officer Incident Database</h1>
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name: </th>
+        <th>Badge Number: </th>
+        <th>Date Hired: </th>
+        <th>Number of Administrative Complaints</th>
+        <th>Number of Citizen Complaints</th>
+        <th>Use of Force Incidents</th>
+        <th>Complaint File</th>
+      </tr>
+    </theadd>
+    <tbody>
+      <% @police.each do |police| %>
+      <tr>
+        <td><%= police.name %></td>
+        <td><%= police.badge_number %></td>
+        <td><%= police.date_hired %></td>
+        <td><%= police.num_of_admin_complaints %></td>
+        <td><%= police.num_of_citizen_complaints%></td>
+        <td>Needs migration</td>
+        <td>needs migration</td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
