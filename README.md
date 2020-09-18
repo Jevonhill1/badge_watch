@@ -1,24 +1,22 @@
 # README
+BadgeWatch
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby/JS version
 
-Things you may want to cover:
+* Yarn && Bundle
 
-* Ruby version
+* Rails s to display on localhost
 
-* System dependencies
+* PostgreSQL Database
 
-* Configuration
+* Download zip or clone repo
 
-* Database creation
+* Has video livestream
 
-* Database initialization
+* Police Database(in progress, 2 columns have yet to be migrated)
 
-* How to run the test suite
+* May add Ruby Motion for Mobile Phones
 
-* Services (job queues, cache servers, search engines, etc.)
+* Needs UX/UI work currently
 
-* Deployment instructions
-
-* ...
+* Byebug testing for Police params[:id]
