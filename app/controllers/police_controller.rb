@@ -1,7 +1,7 @@
 class PoliceController < ApplicationController
 
     def show 
-        byebugp
+        
         @police = Police.find(params[:id])
     end
 
