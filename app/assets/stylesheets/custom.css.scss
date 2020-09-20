@@ -3,12 +3,32 @@
     font-family: 'Roboto', sans-serif 16px;
 }
 body {
-    background-color: #50C878 !important;
+    background: linear-gradient(#009999, #046307, #ffff00);
     font-family: 'Open Sans', sans-serif;
-    
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-.container {
-    width: 560px;
-	background-color: emerald;
-	margin: 0 auto;
+//.container {
+//    width: 560px;
+//	background-color: emerald;
+//	margin: 0 auto;
+//}
+
+.navbar {
+    background-color: #2A3132 !important;
+    color: #FFFFFF !important;
+}
+
+a.nav-link {
+    color: #FFFFFF !important;
+}
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+    font-weight: bold;
 }
