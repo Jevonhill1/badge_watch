@@ -1,10 +1,55 @@
 <h1>Upload Photo or Video</h1>
 
-<button>Upload Video</button>
 <div id="container">
-<section id="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/yfHAG-Ro6ck" 
-frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-allowfullscreen></iframe></section>
+
+<input type="file" name="file" onchange="selectedVideo(this);"/>
+<video autoplay id="video" controls>
+  <source id="source" type="video/mp4">
+</video>
+<script>
+function selectedVideo(self) {
+  var file = self.files[0]
+  var reader = new FileReader()
+
+  reader.onload = function(e)
+    var source = e.target.result
+    var video = document.getElementById("video")
+    var src = document.getElementById("source")
+    
+    source.setAttribute("src", src)
+    video.play()
+    video.load()
+};
+
+window.addEventListener('load', function(){
+  if(this.files && this.files[0]){
+      document.querySelector(input[type="file"]).addEventListener('change', function())
+
+        var img = document.getElementById("img")
+
+        img.src = URL.createObjectURL(this.files[0])
+
+        img.onload = imgLoaded
+
+  }
+})
+
+function imgLoaded(e) {alert(e)}
+<input type="file"/>
+</script>
+
+    <div>
+    <p>Incident Details<%= text_area_tag(:message, "", size: "24x6") %><p>
+    </div>
+    <div>
+    <p>Date <%= Date.today.to_datetime %></p>
+    </div>
+    <div>
+    <p> Email (optional)<%= email_field(:user, :address) %>
+    </div>
+    <div>
+    <p>Date of Incident<%= date_field(:task, :started_at) %></p>
+<div>
+
 </div>
-<button>Upload Photo</button>
-<img src={user.picture.large} alt="profile" className="thumb"/>
+

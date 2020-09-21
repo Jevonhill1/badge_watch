@@ -1,9 +1,12 @@
-<%= simple_form_for @application_controller, url:(livestream_new_path) do |f| %>
-    <%= f.error_notification %>
-  
-    <%= f.input :name %>
-  
-  
-    <%= f.button :submit, class: "btn-primary" %>
-    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
-  <% end %>
+<div>
+  <p>Incident Details<%= text_area_tag(:message, "", size: "24x6") %><p>
+</div>
+<div>
+  <p>Date <%= Date.today.to_datetime %></p>
+</div>
+<div>
+  <p> Email (optional)<%= email_field(:user, :address) %>
+</div>
+<div>
+  <p>Date of Incident<%= date_field(:task, :started_at) %></p>
+<div>
