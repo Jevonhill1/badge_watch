@@ -10,4 +10,5 @@ class PoliceController < ApplicationController
         @police = Police.all
     end
 
+
 end
