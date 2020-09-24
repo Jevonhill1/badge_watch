@@ -7,6 +7,9 @@
     <p>Date Hired: <%= @police.date_hired %></p>
     <p>Number of Administrative Complaints: <%= @police.num_of_admin_complaints %></p>
     <p>Number of Citizens Complaints: <%= @police.num_of_citizen_complaints %></p>
-  </div>  
+    <p>Number of Use of Force Incidents <%= @police.use_of_force_incidents %> </p>
+    <p>Police Complaint File <%= @police.complaint_link %></p>
+  </div> 
   </div>
 </div>
+<button btn btn-success>Back<% link_to police_index_path %></button> 

@@ -16,13 +16,13 @@
       <% @police.each do |police| %>
       <tr>
       
-        <td> <%= link_to police.name, police_path(police) %></td>
+        <td><%= link_to police.name, police_path(police) %></td>
         <td> <%= police.badge_number %> </td>
         <td> <%= police.date_hired %> </td>
-        <td> <%= police.num_of_admin_complaints %> </td>
+        <td>  <%= police.num_of_admin_complaints %> </td>
         <td> <%= police.num_of_citizen_complaints %> </td>
-        <td> Needs migration </td>
-        <td> needs migration </td>
+        <td> <%= police.use_of_force_incidents %> </td>
+        <td> <%= police.complaint_link %> </td>
         
       </tr>
       <% end %>

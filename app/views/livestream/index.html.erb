@@ -1,9 +1,6 @@
 <h1>Live Stream</h1>
 
 <%= react_component 'Streaming' %>
-<p><button id="btnStart">Are you ready to Live Stream?</button></br>
-<button id="btnStop">Stop Recording</button></p>
-<video controls width="100%"" height="auto"></video>
 </br>
 <p><button id="btn btn-success"><%= link_to "Home", home_index_path %></button>
 <button><%= link_to "New Video", livestream_new_path %></button>
@@ -15,7 +12,11 @@
   <input type="submit">
 </form>
 <div>
-    <video id="vid" autoplay></video>
+<div class="player">
+
+    <video id="vid" autoplay controls width="100%"" height="auto">></video>
+    
+          
         <script>
         navigator.mediaDevices.getUserMedia({
             video: true
@@ -24,7 +25,6 @@
             document.getElementById("vid").srcObject = stream;
         })
         </script>
-        
         
 </div>
 <div>
