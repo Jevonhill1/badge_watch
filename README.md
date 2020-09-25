@@ -3,20 +3,24 @@ BadgeWatch
 
 * Ruby/JS version
 
-* Yarn && Bundle
+* Run Yarn && Bundle to get packages working
+
+* Run rails db:migrate and rails db:seed to populate the database
 
 * Rails s to display on localhost
 
-* PostgreSQL Database
+* This app uses PostgreSQL Database
 
 * Download zip or clone repo
 
-* Has video livestream
+* This app has video livestream
 
-* Police Database(in progress, 2 columns have yet to be migrated)
+* This app has a Police Database(in progress, still seeding database)
+
+* This app has authorization for users and admins, but it hasn't been applied yet
 
 * May add Ruby Motion for Mobile Phones
 
 * Needs UX/UI work currently
 
-* Byebug testing for Police params[:id]
+* Byebug testing for Police params[:id] by typing byebug in the police_controller under def show
