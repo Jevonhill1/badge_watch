@@ -1,6 +1,8 @@
 # README
 BadgeWatch
 
+BadgeWatch is proof of the concept of how to take data from reports about police complaints into a searchable list that can help people become informed and engaged in police behavior in their neighborhood. 
+
 * Ruby/JS version
 
 * Run Yarn && Bundle to get packages working
