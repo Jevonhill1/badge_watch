@@ -10,6 +10,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+
+
 //.container {
 //    width: 560px;
 //	background-color: emerald;
@@ -50,4 +53,12 @@ a.nav-link {
 
   .player:hover .controls, player:focus .controls {
     opacity: 1;
+  }
+
+  .no-right-padding {
+    padding-right: 0 !important;
+  }
+
+  .no-left-padding {
+    padding-left: 0 !important;
   }

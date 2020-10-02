@@ -13,7 +13,10 @@ Rails.application.routes.draw do
   get 'livestream/destroy'
 
   get 'dashboard/index'
+  get 'search_police', to: 'police#index'
 
   resources :livestream, only: [:index, :show, :new, :update, :create, :destroy]
-  resources :police, only: [:index, :show, :new, :update, :create, :destroy]
+  resources :police, only: [:index, :show, :new, :update, :create, :destroy] do
+    get :search
+  end
 end

@@ -10,5 +10,12 @@ class PoliceController < ApplicationController
         @police = Police.all
     end
 
+    def search
+        if params[:search].blank?  
+          @police = Police.all  
+        else  
+          @police = Police.search(params)
+        end  
+    end
 
 end
