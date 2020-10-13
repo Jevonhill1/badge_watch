@@ -1,13 +1,13 @@
 <h1>Officer Incident Database</h1> 
 
 <div>
-  <table>
+  <table class="font-size">
     <thead>
       <tr>
         <th>Name: </th>
         <th>Badge Number: </th>
         <th>Date Hired: </th>
-        <th>Number of Administrative Complaints</th>
+        <th class="padding-for-col">Number of Administrative Complaints</th>
         <th>Number of Citizen Complaints</th>
         <th>Use of Force Incidents</th>
         <th>Complaint File</th>
@@ -20,10 +20,10 @@
         <td><%= link_to police.name, police_path(police) %></td>
         <td> <%= police.badge_number %> </td>
         <td> <%= police.date_hired %> </td>
-        <td>  <%= police.num_of_admin_complaints %> </td>
+        <td class="padding-for-col">  <%= police.num_of_admin_complaints %> </td>
         <td> <%= police.num_of_citizen_complaints %> </td>
         <td> <%= police.use_of_force_incidents %> </td>
-        <td> <%= police.complaint_link %> </td>
+        <td> <%= link_to police.complaint_link, target: '_blank' %> </td>
         
       </tr>
       <% end %>
