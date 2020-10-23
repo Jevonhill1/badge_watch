@@ -1,21 +1,21 @@
 <h1>Officer Incident Database</h1> 
 
 <div>
-  <table class="font-size">
+  <table class="font-size table table-bordered table-hover">
     <thead>
       <tr>
-        <th>Name: </th>
-        <th>Badge Number: </th>
-        <th>Date Hired: </th>
-        <th class="padding-for-col">Number of Administrative Complaints</th>
-        <th>Number of Citizen Complaints</th>
-        <th>Use of Force Incidents</th>
-        <th>Complaint File</th>
+        <th scope="col">Name: </th>
+        <th scope="col">Badge Number: </th>
+        <th scope="col">Date Hired: </th>
+        <th class="padding-for-col col">Number of Administrative Complaints</th>
+        <th scope="col">Number of Citizen Complaints</th>
+        <th scope="col">Use of Force Incidents</th>
+        <th scope="col">Complaint File</th>
       </tr>
     </theadd>
     <tbody>
       <% @police.each do |police| %>
-      <tr>
+      <tr scope="row">
       
         <td><%= link_to police.name, police_path(police) %></td>
         <td> <%= police.badge_number %> </td>

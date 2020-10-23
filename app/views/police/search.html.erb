@@ -1,6 +1,7 @@
 <h1>Officer Details<h1>
 <div class="card text-center">
   <div class="card-header">
+  <%= police.each do |police| %>
     <p>Name: <%= @police.name %></p>
   <div class="card-body">  
     <p>Badge Number: <%= @police.badge_number %></p>
