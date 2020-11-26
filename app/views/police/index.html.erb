@@ -1,5 +1,7 @@
 <h1>Officer Incident Database</h1> 
-
+<div class="apple_pagination">
+    <%= will_paginate @polce, :container => false %>
+  </div>
 <div>
   <table class="font-size table table-bordered table-hover">
     <thead>
@@ -29,5 +31,9 @@
       <% end %>
     </tbody>
   </table>
-  <button><%= link_to "Livestream", livestream_index_path %></button>
+  <button><%= link_to "Home", home_index_path %></button>
+  
+  <div class="apple_pagination">
+    <%= will_paginate @polce, :container => false %>
+  </div>
 </div>
